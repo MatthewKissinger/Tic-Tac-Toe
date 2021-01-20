@@ -19,20 +19,20 @@ body {
 
 header {
     /* border: 1px solid white; */
-    height: 20vh;
+    height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 header h2 {
-    font-size: 6rem;
+    font-size: 5rem;
     color: #66FCF1;
 }
 
 #game-area {
     margin: 0 auto;
-    height: 80vh;
+    height: 88vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,9 +46,9 @@ header h2 {
     justify-content: space-between;
     align-items: center;
     height: 150px;
-    width: 700px;
+    width: 800px;
     /* border: 1px solid purple; */
-    margin-top: -16rem;
+    margin-top: -8rem;
 }
 
 #playerX-container, #playerO-container {
@@ -56,14 +56,14 @@ header h2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 70px;
     width: 200px;
     /* border: 1px solid orange; */
     border-radius: 4px;
 }
 
 #playerX-container h4, #playerO-container h4 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #C5C6C7;
 }
 
@@ -91,15 +91,15 @@ header h2 {
 
 #game-start {
     height: 50px;
-    width: 200px;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #45A29E;
     border-radius: 4px;
     position: absolute;
-    left: 45%;
-    top: 37.5%;
+    top: -20%;
+    left: 10%;
     cursor: pointer;
     background: #0B0C10;
     color: #C5C6C7;
@@ -111,8 +111,9 @@ header h2 {
 }
 
 #gameboard-container {
-    height: 300px;
-    width: 300px;
+    position: relative;
+    height: 330px;
+    width: 330px;
     /* border: 1px solid white; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -131,7 +132,7 @@ header h2 {
     background-color: #0B0C10;
     border-radius: 4px;
     cursor: pointer;
-    margin: .25rem;
+    margin: 5px;
 }
 
 .square:hover {
