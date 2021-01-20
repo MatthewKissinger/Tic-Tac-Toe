@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    
+<header>
+    <h2>Tic Tac Toe</h2>
+</header>
+
+<div id="game-area">
+    
+    <div id="player-container">
+
+        <div id="playerX-container">
+            <h4>Player X</h4>
+            <select name="playerX-choice" id="playerX-choice">
+                <option value="" disabled selected>select intelligence</option>
+                <option value="human">Human</option>
+                <option value="computerAI">Computer AI</option>
+            </select>
+        </div>
+
+        <div id="message"></div>
+        <div id="game-start">Click Here to Start</div>
+
+        <div id="playerO-container">
+            <h4>Player O</h4>
+            <select name="playerO-choice" id="playerO-choice">
+                <option value="" disabled selected>select intelligence</option>
+                <option value="human">Human</option>
+                <option value="computerAI">Computer AI</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="gameboard-container"></div>
+</div>
+
+
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

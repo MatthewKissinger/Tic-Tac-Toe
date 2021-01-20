@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/* .hide {
+    display: none;
+} */
+
+header {
+    /* border: 1px solid black; */
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 32px;
+}
+
+#game-area {
+    margin: 0 auto;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+#player-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 700px;
+    /* border: 1px solid purple; */
+}
+
+#playerX-container, #playerO-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 200px;
+    /* border: 1px solid orange; */
+    border-radius: 4px;
+}
+
+#playerX-container h4, #playerO-container h4 {
+    font-size: 2rem;
+}
+
+#playerX-container select, #playerO-container select {
+    cursor: pointer;
+}
+
+#message {
+    height: 80px;
+    width: 250px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    border-radius: 4px;
+    position: absolute;
+    left: 44%;
+}
+
+#message span {
+    font-size: 2rem;
+}
+
+#game-start {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 4px;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    cursor: pointer;
+}
+
+#gameboard-container {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+#square-4 {
+    border: 2px solid black;
+}
+
+#square-1, #square-7 {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#square-3, #square-5 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
