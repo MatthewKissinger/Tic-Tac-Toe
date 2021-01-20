@@ -1,3 +1,11 @@
+/* colors
+black -- #0B0C10
+darkGray -- #1F2833
+lightGray -- #C5C6C7
+brightTeal -- #66FCF1
+darkTeal -- #45A29E */
+
+
 * {
     padding: 0;
     margin: 0;
@@ -5,30 +13,32 @@
     font-family: monospace;
 }
 
-/* .hide {
-    display: none;
-} */
+body {
+    background: #1F2833;
+}
 
 header {
-    /* border: 1px solid black; */
-    height: 70px;
+    /* border: 1px solid white; */
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 header h2 {
-    font-size: 32px;
+    font-size: 6rem;
+    color: #66FCF1;
 }
 
 #game-area {
     margin: 0 auto;
-    height: 85vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
+    /* border: 1px solid orange; */
 }
 
 #player-container {
@@ -38,6 +48,7 @@ header h2 {
     height: 150px;
     width: 700px;
     /* border: 1px solid purple; */
+    margin-top: -16rem;
 }
 
 #playerX-container, #playerO-container {
@@ -52,7 +63,8 @@ header h2 {
 }
 
 #playerX-container h4, #playerO-container h4 {
-    font-size: 2rem;
+    font-size: 3rem;
+    color: #C5C6C7;
 }
 
 #playerX-container select, #playerO-container select {
@@ -65,10 +77,12 @@ header h2 {
     display: none;
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
+    border: 1px solid #45A29E;
     border-radius: 4px;
     position: absolute;
     left: 44%;
+    background: #0B0C10;
+    color: #C5C6C7;
 }
 
 #message span {
@@ -81,21 +95,29 @@ header h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    border: 1px solid #45A29E;
     border-radius: 4px;
     position: absolute;
     left: 45%;
-    top: 40%;
+    top: 37.5%;
     cursor: pointer;
+    background: #0B0C10;
+    color: #C5C6C7;
+    font-size: 1.25rem;
+}
+
+#game-start:hover {
+    opacity: .7;
 }
 
 #gameboard-container {
     height: 300px;
     width: 300px;
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 8rem;
 }
 
 .square {
@@ -105,18 +127,27 @@ header h2 {
     justify-content: center;
     align-items: center;
     font-size: 5rem;
+    color:  #66FCF1;
+    background-color: #0B0C10;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: .25rem;
+}
+
+.square:hover {
+    opacity: .5;
 }
 
 #square-4 {
-    border: 2px solid black;
+    border: 2px solid  #66FCF1;
 }
 
 #square-1, #square-7 {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-left: 2px solid  #66FCF1;
+    border-right: 2px solid  #66FCF1;
 }
 
 #square-3, #square-5 {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid  #66FCF1;
+    border-bottom: 2px solid  #66FCF1;
 }

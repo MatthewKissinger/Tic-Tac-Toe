@@ -196,8 +196,6 @@ const playGame = (() => {
 
 
 
-// TESTING AREA
-
 
 
 
